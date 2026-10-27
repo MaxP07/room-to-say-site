@@ -42,3 +42,11 @@ Apple references checked 27 October 2026:
 ## Custom domain later
 
 When a domain has been registered, set it in GitHub Pages and follow the DNS instructions GitHub supplies. Add the matching `CNAME` file to the repository, verify the domain, and enable HTTPS. No domain is hard-coded or assumed to have been purchased.
+
+## Search and beta information
+
+Each page has a distinct title and description, an absolute canonical URL, social preview metadata, and factual WebPage JSON-LD. The homepage describes appointment preparation directly and includes a linked public-beta section. Beta dates, platforms, and enrolment are deliberately unconfirmed.
+
+`sitemap.xml` lists all four pages. Submit its full URL in a verified Google Search Console property when available; submission and indexing have not been performed by this change. `robots.txt` is ready for a future domain-root deployment. On the current GitHub project URL, crawlers use `https://maxp07.github.io/robots.txt`, not the project-subfolder file. The site itself does not block indexing.
+
+When moving to a custom domain, update canonical, Open Graph, Twitter image, JSON-LD, sitemap, and robots URLs together. No ranking or rich-result appearance is guaranteed. Google guidance: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
