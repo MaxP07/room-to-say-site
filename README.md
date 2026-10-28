@@ -61,3 +61,6 @@ roomtosay.app and www.roomtosay.app have proxied redirect-only A records to 192.
 At setup, GitHub was still provisioning the primary domain certificate. HTTPS enforcement must only be enabled after https://roomtosay.org validates successfully. Do not bypass certificate errors. Support contact and the final app privacy policy remain launch gaps.
 
 All page canonical, social metadata, JSON-LD, robots and sitemap URLs now use the primary domain. The live design, V1 plans and expanded FAQs were deployed together. The app-direction.css layer matches the supplied app visual reference; all planned features remain qualified.
+
+
+Email Routing is enabled for hello@, support@, privacy@, and max@roomtosay.org, all forwarding to the verified owner inbox. Cloudflare shows all four rules Active; catch-all remains disabled. These are incoming aliases, not separate mailboxes or outbound sending identities. An end-to-end delivery test has not been performed. Public contact links are present on the relevant pages; the app privacy policy remains a draft.

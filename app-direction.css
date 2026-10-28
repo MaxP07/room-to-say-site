@@ -81,3 +81,5 @@ h1 { font-size: clamp(54px, 6.2vw, 80px); line-height: 1.06; letter-spacing: -3.
 .home-faq details p { margin: 15px 0 0; color: var(--muted); font-size: 14px; }
 .home-faq > .text-link { margin-top: 20px; }
 @media print { .home-faq { display: none; } }
+.founder-email { display: inline-block; margin-top: 6px; color: var(--mist); font-size: 12px; text-underline-offset: 3px; }
+@media(max-width:700px) { .footer nav { flex-wrap: wrap; row-gap: 12px; } }
