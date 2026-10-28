@@ -83,3 +83,6 @@ h1 { font-size: clamp(54px, 6.2vw, 80px); line-height: 1.06; letter-spacing: -3.
 @media print { .home-faq { display: none; } }
 .founder-email { display: inline-block; margin-top: 6px; color: var(--mist); font-size: 12px; text-underline-offset: 3px; }
 @media(max-width:700px) { .footer nav { flex-wrap: wrap; row-gap: 12px; } }
+/* Give the conversational headline room to breathe on small screens. */
+.hero h1 { font-size: clamp(44px, 5vw, 68px); letter-spacing: -2.5px; }
+@media(max-width:700px) { .hero h1 { font-size: clamp(34px, 8.5vw, 52px); letter-spacing: -1.5px; } .hero-tagline { line-height: 1.6; } }
