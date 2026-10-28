@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://maxp07.github.io/room-to-say-site/sitemap.xml
+Sitemap: https://roomtosay.org/sitemap.xml
