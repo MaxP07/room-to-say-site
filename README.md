@@ -50,3 +50,14 @@ Each page has a distinct title and description, an absolute canonical URL, socia
 `sitemap.xml` lists all four pages. Submit its full URL in a verified Google Search Console property when available; submission and indexing have not been performed by this change. `robots.txt` is ready for a future domain-root deployment. On the current GitHub project URL, crawlers use `https://maxp07.github.io/robots.txt`, not the project-subfolder file. The site itself does not block indexing.
 
 When moving to a custom domain, update canonical, Open Graph, Twitter image, JSON-LD, sitemap, and robots URLs together. No ranking or rich-result appearance is guaranteed. Google guidance: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+
+
+## Live domain configuration — 28 October 2026
+
+Primary URL: https://roomtosay.org/ (GitHub Pages). Cloudflare DNS has the four documented GitHub Pages apex A records, DNS-only, plus a DNS-only www CNAME to maxp07.github.io. GitHub Pages is configured with roomtosay.org as its custom domain.
+
+roomtosay.app and www.roomtosay.app have proxied redirect-only A records to 192.0.2.1. An enabled Cloudflare Single Redirect sends all requests in that zone to https://roomtosay.org, preserving path and query string with status 301. Both redirects were verified with valid TLS.
+
+At setup, GitHub was still provisioning the primary domain certificate. HTTPS enforcement must only be enabled after https://roomtosay.org validates successfully. Do not bypass certificate errors. Support contact and the final app privacy policy remain launch gaps.
+
+All page canonical, social metadata, JSON-LD, robots and sitemap URLs now use the primary domain. The live design, V1 plans and expanded FAQs were deployed together. The app-direction.css layer matches the supplied app visual reference; all planned features remain qualified.
