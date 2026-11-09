@@ -110,3 +110,14 @@ h1 { font-size: clamp(54px, 6.2vw, 80px); line-height: 1.06; letter-spacing: -3.
   .section, .story-section, .partners-section, .beta-section { padding-block: 44px; }
   .steps { margin-top: 24px; }
 }
+
+.demo-video { margin: 28px 0 18px; }
+.demo-video video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #203747; border: 1px solid var(--border); border-radius: 22px; }
+.demo-video figcaption { color: var(--muted); font-size: 12px; margin-top: 12px; }
+.demo-transcript { max-width: 760px; padding: 16px 20px; background: white; border: 1px solid var(--border); border-radius: 16px; }
+.demo-transcript summary { cursor: pointer; color: var(--ocean); font-weight: 550; }
+.demo-transcript ol { padding-left: 22px; margin-bottom: 0; color: var(--muted); font-size: 14px; }
+.demo-transcript li + li { margin-top: 12px; }
+.demo-action { margin: 20px 0 0; }
+@media (max-width: 700px) { .demo-video video { border-radius: 14px; } }
+@media print { .demo-section { display: none!important; } }
