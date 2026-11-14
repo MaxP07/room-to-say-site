@@ -121,3 +121,25 @@ h1 { font-size: clamp(54px, 6.2vw, 80px); line-height: 1.06; letter-spacing: -3.
 .demo-action { margin: 20px 0 0; }
 @media (max-width: 700px) { .demo-video video { border-radius: 14px; } }
 @media print { .demo-section { display: none!important; } }
+
+/* Explicit language choice; no automatic redirect or saved preference. */
+.header { flex-wrap: wrap; height: auto; min-height: 108px; padding-block: 20px; gap: 18px; }
+.header nav { margin-left: auto; }
+.language-control { display: flex; align-items: center; gap: 8px; }
+.language-control label { font-size: 12px; color: var(--muted); }
+.language-control select { font: inherit; font-size: 13px; color: var(--ocean); background: white; border: 1px solid var(--border); border-radius: 12px; padding: 9px 28px 9px 11px; max-width: 135px; cursor: pointer; }
+.language-control select:focus-visible { outline: 3px solid var(--ocean); outline-offset: 4px; }
+:lang(pl) .hero h1 { font-size: clamp(46px, 5.4vw, 74px); letter-spacing: -2.6px; }
+@media (max-width: 950px) { .language-control label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); } }
+@media (max-width: 700px) {
+  .header { min-height: 85px; gap: 14px; padding-block: 18px; }
+  .header nav { order: 3; width: 100%; justify-content: flex-start; flex-wrap: wrap; margin: 0; gap: 18px; }
+  .language-control { margin-left: auto; }
+  :lang(pl) .hero h1 { font-size: clamp(36px, 9vw, 52px); letter-spacing: -1.6px; }
+  :lang(pl) .section-heading h2 { font-size: clamp(29px, 8vw, 36px); }
+}
+@media print { .language-control { display: none!important; } }
+@media print {
+  :lang(pl) .prompt-sheet:before { content: 'Room to Say — Przygotowanie do wizyty'; }
+  :lang(pl) .prompt-footer:after { content: ' • Przygotuj się. Poczuj wsparcie. Daj się usłyszeć.'; }
+}
